@@ -1,0 +1,392 @@
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  header img {
+    width: 70px;
+    order: 1;
+  }
+
+  header a {
+    font-size: 18px;
+    order: 2;
+    width: 100%;
+  }
+
+  header a:hover {
+    font-size: 20px;
+  }
+
+  section {
+    padding: 4% 3%;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 3% 3%;
+  }
+
+  .hero .img-fundo {
+    position: relative;
+    margin: 40px 0;
+    width: 52vw;
+  }
+
+  .hero .foto {
+    width: 46vw;
+    left: 120px;
+    top: 150px;
+  }
+
+  .hero .descricao {
+    width: 100%;
+  }
+
+  .hero .descricao h1 {
+    font-size: 24px;
+    margin: 1.5rem 0.5rem;
+  }
+
+  .hero .descricao p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+
+  .hero .descricao span {
+    font-size: 16px;
+  }
+
+  .sobre {
+    flex-direction: column;
+    padding: 3% 3%;
+  }
+
+  .sobre .historia {
+    padding: 1rem;
+  }
+
+  .sobre .historia h2 {
+    font-size: 22px;
+    margin: 1rem 0;
+  }
+
+  .sobre .historia p {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .sobre img {
+    max-width: 100%;
+  }
+
+  .carrossel .img-slide img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .doces {
+    padding: 3% 3%;
+  }
+
+  .doces h2 {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+  }
+
+  .doces .cards {
+    gap: 0.5rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .doces .card {
+    flex: 0 1 calc(50% - 0.5rem);
+    min-width: 250px;
+  }
+
+  .doces .card h3 {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+
+  .doces .card img {
+    width: 200px;
+    margin-block: 20px;
+  }
+
+  .doces .card p {
+    font-size: 14px;
+  }
+
+  .doces .frase {
+    font-size: 18px;
+  }
+
+  .qualidades {
+    min-height: 300px;
+    gap: 1rem;
+    padding: 3% 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .qualidades .q1,
+  .qualidades .q2,
+  .qualidades .q3,
+  .qualidades .q4 {
+    font-size: 14px;
+    padding: 0.8rem 1rem;
+  }
+
+  .qualidades .q1 {
+    top: 3240px;
+    left: 15px;
+  }
+  
+  .qualidades .q2 {
+    top: 3420px;
+    left: 5px;
+  }
+  
+  .qualidades .q3 {
+    top: 3220px;
+    right: 15px;
+  }
+  
+  .qualidades .q4 {
+    top: 3390px;
+    right: 5px;
+  }
+
+  .qualidades img {
+    width: 95%;
+  }
+
+  #faq {
+    padding: 3% 3%;
+  }
+
+  #faq h2 {
+    font-size: 22px;
+    margin: 0.5rem 0;
+    padding: 20px auto;
+  }
+
+  .faq-container {
+    gap: 1rem;
+  }
+
+  .faq-box {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .accordion-header {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .accordion-header::after {
+    right: 10px;
+  }
+
+  .accordion-content p {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .faixainfinita {
+    padding: 1rem;
+  }
+
+  .faixainfinita .faixa h3 {
+    font-size: 20px;
+    margin-right: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .formasdepagamento {
+    padding: 3% 3%;
+    flex-direction: column;
+  }
+
+  .formasdepagamento .ttpagamento {
+    font-size: 22px;
+  }
+
+  .formasdepagamento .formas {
+    font-size: 18px;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .formasdepagamento .atencao {
+    font-size: 28px;
+    text-align: end;
+    margin: 40px 10px;
+  }
+
+  footer {
+    padding: 2rem 3%;
+    gap: 1.5rem;
+  }
+
+  footer .informacoes {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  footer .informacoes img {
+    width: 120px;
+  }
+
+  footer .informacoes ul,
+  footer .informacoes nav {
+    width: 100%;
+  }
+
+  footer .redessociais h3 {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .redes {
+    gap: 5px;
+  }
+
+  footer .redessociais .redes img {
+    width: 80%;
+    height: 80%;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+/* ==================== MEDIA QUERIES - SMALL MOBILE ==================== */
+@media (max-width: 480px) {
+  header {
+    padding: 0.8rem 2%;
+  }
+
+  header img {
+    width: 60px;
+  }
+
+  header a {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 3% 2%;
+  }
+
+  .hero .descricao h1 {
+    font-size: 20px;
+    margin: 1rem 0.3rem;
+  }
+
+  .hero .descricao p {
+    font-size: 13px;
+    padding: 0.3rem;
+  }
+
+  .hero .descricao span {
+    font-size: 14px;
+  }
+
+  .sobre .historia h2 {
+    font-size: 18px;
+  }
+
+  .sobre .historia p {
+    font-size: 14px;
+  }
+
+  .carrossel .img-slide img {
+    width: 150px;
+    height: 220px;
+  }
+
+  .doces h2 {
+    font-size: 18px;
+  }
+
+  .doces .card {
+    flex: 0 1 100%;
+  }
+
+  .doces .card h3 {
+    font-size: 14px;
+  }
+
+  .doces .card img {
+    max-width: 120px;
+  }
+
+  .qualidades .q1,
+  .qualidades .q2,
+  .qualidades .q3,
+  .qualidades .q4 {
+    font-size: 12px;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .qualidades img {
+    max-width: 150px;
+  }
+
+  #faq h2 {
+    font-size: 18px;
+  }
+
+  .accordion-header {
+    font-size: 0.85rem;
+    padding: 0.7rem 0.8rem;
+  }
+
+  .accordion-content p {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+
+  .faixainfinita .faixa h3 {
+    font-size: 16px;
+    margin-right: 1rem;
+  }
+
+  .formasdepagamento .ttpagamento {
+    font-size: 18px;
+  }
+
+  .formasdepagamento .formas {
+    font-size: 16px;
+  }
+
+  .formasdepagamento .atencao {
+    font-size: 18px;
+  }
+
+  footer .informacoes img {
+    width: 100px;
+  }
+
+  footer .redessociais h3 {
+    font-size: 16px;
+  }
+
+  footer .redessociais .redes img {
+    width: 35px;
+    height: 35px;
+  }
+
+  footer p {
+    font-size: 11px;
+  }
+}
