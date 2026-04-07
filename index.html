@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="website icon" href="./img/logo-aba.png" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -63,7 +65,7 @@
         <img src="img/docinhos.webp" alt="Cento de docinhos" />
       </section>
 
-      <section class="carrossel">
+      <section class="carrossel" data-aos="fade-left" data-aos-duration="1000">
         <div class="slides">
           <div class="img-slide">
             <img
@@ -132,17 +134,17 @@
       <section id="nossosDoces" class="doces">
         <h2>Temos várias opções para <br> adoçar o SEU dia!</h2>
         <div class="cards">
-          <div class="card">
+          <div class="card" data-aos="fade-right" data-aos-duration="1000">
             <h3>Cento de Docinhos</h3>
             <img src="img/cent. doces.webp" alt="Cento de docinhos" />
             <p>A partir de R$</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-duration="1500">
             <h3>BomBom de Uva</h3>
             <img src="img/bombom travessa.webp" alt="BomBom de Uva" />
             <p>A partir de R$</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-duration="2000">
             <h3>Camadas de Felicidade</h3>
             <img
               src="img/camadas de felicidade.webp"
@@ -150,7 +152,7 @@
             />
             <p>A partir de R$</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-left" data-aos-duration="2000">
             <h3>Salada de Frutas Gourmet</h3>
             <img
               src="img/salada de frutas gourmet.webp"
@@ -246,7 +248,7 @@
         </div>
       </section>
 
-      <div class="faixainfinita">
+      <div class="faixainfinita" data-aos="fade-left" data-aos-duration="1000">
         <div class="faixa">
           <h3>Sempre adoçando o SEU dia!</h3>
           <h3>Sempre adoçando o SEU dia!</h3>
@@ -260,18 +262,18 @@
       <section class="formasdepagamento">
         <div class="pagamento">
           <h2 class="ttpagamento">Formas de <br> Pagamento</h2>
-          <div class="formas">
+          <div class="formas" data-aos="fade-up" data-aos-duration="1000">
             <p>Cartão de Créd./Déb.</p>
           </div>
-          <div class="formas">
+          <div class="formas" data-aos="fade-up" data-aos-duration="1500">
             <p>Dinheiro</p>
           </div>
-          <div class="formas">
+          <div class="formas" data-aos="fade-up" data-aos-duration="2000">
             <p>Pix</p>
           </div>
         </div>
 
-        <h2 class="atencao">Faça já seu Pedido!</h2>
+        <h2 class="atencao" data-aos="fade-left" data-aos-duration="1000">Faça já seu Pedido!</h2>
       </section>
     </main>
     <footer>
@@ -304,6 +306,12 @@
         © 2026 La Doceria & Cia. Todos os direitos reservados.
       </p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init()
+    </script>
 
     <script src="script.js"></script>
   </body>
