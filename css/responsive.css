@@ -140,32 +140,11 @@
   .qualidades .q2,
   .qualidades .q3,
   .qualidades .q4 {
-    font-size: 14px;
-    padding: 0.8rem 1rem;
-  }
-
-  .qualidades .q1 {
-    top: 3240px;
-    left: 15px;
-  }
-  
-  .qualidades .q2 {
-    top: 3420px;
-    left: 5px;
-  }
-  
-  .qualidades .q3 {
-    top: 3220px;
-    right: 15px;
-  }
-  
-  .qualidades .q4 {
-    top: 3390px;
-    right: 5px;
+    display: none;
   }
 
   .qualidades img {
-    width: 95%;
+    display: none;
   }
 
   #faq {
@@ -335,12 +314,11 @@
   .qualidades .q2,
   .qualidades .q3,
   .qualidades .q4 {
-    font-size: 12px;
-    padding: 0.6rem 0.8rem;
+    display: none;
   }
 
   .qualidades img {
-    max-width: 150px;
+    display: none;
   }
 
   #faq h2 {
