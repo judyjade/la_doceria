@@ -1,4 +1,16 @@
 @media (max-width: 768px) {
+  /* Correção global para evitar o espaço lateral branco */
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
   header {
     justify-content: center;
     text-align: center;
@@ -127,24 +139,36 @@
     font-size: 18px;
   }
 
+  /* AJUSTE QUALIDADES: Mantendo dentro da seção */
   .qualidades {
+    position: relative; /* Essencial para as mensagens ficarem dentro */
     min-height: 300px;
     gap: 1rem;
     padding: 3% 3%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Garante que nada saia da seção */
   }
 
   .qualidades .q1,
   .qualidades .q2,
   .qualidades .q3,
   .qualidades .q4 {
-    display: none;
+    position: absolute; /* Mudado para absolute para respeitar o container .qualidades */
+    font-size: 14px;
+    padding: 0.8rem 1rem;
+    z-index: 5;
   }
 
+  /* Posicionamento relativo à seção qualidades (ajustado para não vazar) */
+  .qualidades .q1 { top: 10%; left: 5%; }
+  .qualidades .q2 { bottom: 5%; left: 5%; }
+  .qualidades .q3 { top: 10%; right: 5%; }
+  .qualidades .q4 { bottom: 10%; right: 5%; }
+
   .qualidades img {
-    display: none;
+    width: 95%;
   }
 
   #faq {
@@ -236,12 +260,16 @@
   }
 
   .redes {
-    gap: 5px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
   }
 
+  /* AJUSTE FOOTER: Ícones maiores e sem distorção */
   footer .redessociais .redes img {
-    width: 80%;
-    height: 80%;
+    width: 45px; /* Aumentado conforme solicitado */
+    height: 45px;
+    object-fit: contain;
   }
 
   footer p {
@@ -314,11 +342,12 @@
   .qualidades .q2,
   .qualidades .q3,
   .qualidades .q4 {
-    display: none;
+    font-size: 11px;
+    padding: 0.5rem;
   }
 
   .qualidades img {
-    display: none;
+    max-width: 150px;
   }
 
   #faq h2 {
@@ -361,8 +390,8 @@
   }
 
   footer .redessociais .redes img {
-    width: 35px;
-    height: 35px;
+    width: 40px; /* Tamanho para telas muito pequenas */
+    height: 40px;
   }
 
   footer p {
