@@ -94,14 +94,37 @@
     max-width: 100%;
   }
 
-  .carrossel .img-slide img {
+  .carrossel {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: -4em;
+
+  .slides {
     width: 100vw;
-    height: 150vw;
+    white-space: nowrap;
+    overflow: hidden;
+
+    .img-slide {
+      display: inline-block;
+      animation: anima 40s linear infinite;
+
+      img {
+        width: 74vw;
+        height: 74vw;
+        border-radius: 20px;
+        margin-right: 10px;
+        object-fit: cover;
+      }
+    }
   }
+}
+
+
 
   .doces {
     padding: 3% 3%;
-    margin-top: 250px;
+    margin-top: 60px;
   }
 
   .doces h2 {
@@ -162,10 +185,28 @@
   }
 
   /* Posicionamento relativo à seção qualidades (ajustado para não vazar) */
-  .qualidades .q1 { top: 10%; left: 5%; }
-  .qualidades .q2 { bottom: 5%; left: 5%; }
-  .qualidades .q3 { top: 10%; right: 5%; }
-  .qualidades .q4 { bottom: 10%; right: 5%; }
+  .qualidades {
+
+    .q1 {
+      top: 80px;
+      left: 20px;
+    }
+
+    .q2 {
+      top: 260px;
+      left: 10px;
+    }
+
+    .q3 {
+      top: 60px;
+      right: 25px;
+    }
+
+    .q4 {
+      top: 260px;
+      right: 10px;
+    }
+  }
 
   .qualidades img {
     width: 95%;
@@ -204,8 +245,8 @@
     padding: 0.8rem;
   }
 
-  .faixainfinita {
-    padding: 1rem;
+  .faixainfinita .faixa .texto-faixa h3 {
+    font-size: 35px
   }
 
   .faixainfinita .faixa h3 {

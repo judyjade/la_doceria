@@ -134,7 +134,7 @@ section {
 
     .img-slide {
       display: inline-block;
-      animation: anima 50s linear infinite;
+      animation: anima 40s linear infinite;
 
       img {
         width: 30vw;
@@ -235,7 +235,7 @@ section {
   .q3 {
     position: absolute;
     top: 2900px;
-    right: 200px;
+    right: 250px;
     animation: flutuar 4s ease-in-out infinite;
   }
 
@@ -349,7 +349,7 @@ section {
 }
 
 .faixainfinita {
-  padding: 30px;
+  padding-block: 30px;
   background: #fff;
   overflow: hidden;
   border-bottom: #000 solid 5px;
@@ -357,9 +357,13 @@ section {
   .faixa {
     white-space: nowrap;
     width: 100vw;
-    animation: faixa 18s linear infinite;
-
-    h3 {
+    overflow: hidden;
+    
+    .texto-faixa {
+      display: inline-block;
+      animation: faixa 20s linear infinite;
+      
+      h3 {
       display: inline-block;
       font-family: "Montserrat", sans-serif;
       font-weight: 800;
@@ -367,6 +371,7 @@ section {
       margin-right: 50px;
       letter-spacing: 5px;
     }
+  }
   }
 }
 
